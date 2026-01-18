@@ -19,8 +19,12 @@
   },
   "name":"GameJam Project",
   "resources":[
-    {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_projetil","path":"objects/obj_projetil/obj_projetil.yy",},},
+    {"id":{"name":"obj_sistema_esferas","path":"objects/obj_sistema_esferas/obj_sistema_esferas.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_esfera_magica","path":"sprites/spr_esfera_magica/spr_esfera_magica.yy",},},
+    {"id":{"name":"spr_projetil","path":"sprites/spr_projetil/spr_projetil.yy",},},
     {"id":{"name":"Spr_Temp","path":"sprites/Spr_Temp/Spr_Temp.yy",},},
   ],
   "resourceType":"GMProject",
