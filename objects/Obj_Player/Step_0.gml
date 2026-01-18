@@ -1,13 +1,22 @@
-var _key = keyboard_lastchar;
-if ord(_key) == ord("w") {
-	y-=2
+//Movimentação
+// W - Cima
+if keyboard_check(ord("W")) {
+    y -= 2;
 }
-if ord(_key) == ord("s") {
-	y+=2
+
+// S - Baixo
+if keyboard_check(ord("S")) {
+    y += 2;
 }
-if ord(_key) == ord("a") {
-	x-=2 image_xscale=-1
+
+// A - Esquerda
+if keyboard_check(ord("A")) {
+    x -= 2;
+    image_xscale = -1; // Vira o sprite para a esquerda
 }
-if ord(_key) == ord("d") {
-	x+=2 image_xscale=1
+
+// D - Direita
+if keyboard_check(ord("D")) {
+    x += 2;
+    image_xscale = 1; // Vira o sprite para a direita
 }
