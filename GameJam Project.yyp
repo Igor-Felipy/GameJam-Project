@@ -27,6 +27,7 @@
     {"id":{"name":"obj_sistema_esferas","path":"objects/obj_sistema_esferas/obj_sistema_esferas.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"spr_esfera_magica","path":"sprites/spr_esfera_magica/spr_esfera_magica.yy",},},
+    {"id":{"name":"spr_francy_idle","path":"sprites/spr_francy_idle/spr_francy_idle.yy",},},
     {"id":{"name":"spr_projetil","path":"sprites/spr_projetil/spr_projetil.yy",},},
     {"id":{"name":"Spr_Temp","path":"sprites/Spr_Temp/Spr_Temp.yy",},},
   ],

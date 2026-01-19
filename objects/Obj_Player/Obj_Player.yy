@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_Temp",
-    "path":"sprites/Spr_Temp/Spr_Temp.yy",
+    "name":"spr_francy_idle",
+    "path":"sprites/spr_francy_idle/spr_francy_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
