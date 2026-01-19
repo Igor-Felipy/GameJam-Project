@@ -19,6 +19,9 @@
   },
   "name":"GameJam Project",
   "resources":[
+    {"id":{"name":"obj_boss_fase1","path":"objects/obj_boss_fase1/obj_boss_fase1.yy",},},
+    {"id":{"name":"obj_inimigo_pai","path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",},},
+    {"id":{"name":"obj_inimigo_slime","path":"objects/obj_inimigo_slime/obj_inimigo_slime.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_projetil","path":"objects/obj_projetil/obj_projetil.yy",},},
     {"id":{"name":"obj_sistema_esferas","path":"objects/obj_sistema_esferas/obj_sistema_esferas.yy",},},

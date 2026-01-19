@@ -1,19 +1,21 @@
 if (!instance_exists(obj_player)) exit;
 
-// Espaçamento entre as esferas (em graus)
-// Se tiver 5 esferas, será 360/5 = 72 graus de distância uma da outra
-var _separacao_graus = 360 / max_esferas_desbloqueadas;
-
-// Loop para desenhar APENAS as esferas que você tem atualmente
-for (var i = 0; i < esferas_atuais; i++) {
+for (var i = 0; i < max_esferas_desbloqueadas; i++) {
     
-    // Calcula o ângulo desta esfera específica
-    // angulo_atual (giro constante) + (índice * separação)
-    var _angulo_desta_esfera = angulo_atual + (i * _separacao_graus);
+    var _angulo_esfera = 0;
     
-    // Calcula a posição X e Y usando lengthdir (Matemática polar)
-    var _draw_x = x + lengthdir_x(raio_orbita, _angulo_desta_esfera);
-    var _draw_y = y + lengthdir_y(raio_orbita, _angulo_desta_esfera);
+    if (max_esferas_desbloqueadas > 1) {
+        // Matemática do arco (igual ao Step)
+        var _step = arco_total / (max_esferas_desbloqueadas - 1);
+        var _inicio = direcao_costas - (arco_total / 2);
+        _angulo_esfera = _inicio + (i * _step);
+    } else {
+        _angulo_esfera = direcao_costas;
+    }
+    
+    // Posição visual
+    var _draw_x = x + lengthdir_x(raio_orbita, _angulo_esfera);
+    var _draw_y = y + lengthdir_y(raio_orbita, _angulo_esfera);
     
     // Desenha
     draw_sprite(spr_esfera_magica, 0, _draw_x, _draw_y);
