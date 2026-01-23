@@ -9,8 +9,8 @@
   "name":"obj_inimigo_slime",
   "overriddenProperties":[],
   "parent":{
-    "name":"GameJam Project",
-    "path":"GameJam Project.yyp",
+    "name":"objetos",
+    "path":"folders/objetos.yy",
   },
   "parentObjectId":{
     "name":"obj_inimigo_pai",

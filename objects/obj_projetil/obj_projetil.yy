@@ -8,8 +8,8 @@
   "name":"obj_projetil",
   "overriddenProperties":[],
   "parent":{
-    "name":"GameJam Project",
-    "path":"GameJam Project.yyp",
+    "name":"objetos",
+    "path":"folders/objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,

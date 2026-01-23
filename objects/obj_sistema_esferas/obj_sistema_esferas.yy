@@ -10,8 +10,8 @@
   "name":"obj_sistema_esferas",
   "overriddenProperties":[],
   "parent":{
-    "name":"GameJam Project",
-    "path":"GameJam Project.yyp",
+    "name":"objetos",
+    "path":"folders/objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
