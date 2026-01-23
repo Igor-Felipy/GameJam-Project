@@ -20,8 +20,8 @@ for(var i=0; i < passos;i+=1){
 		dir = irandom(3);
 	}
 	
-	xx+=lengthdir_x(1,dir*90);
-	yy+=lengthdir_y(1,dir*90);
+	xx+=round(lengthdir_x(1,dir*90));
+	yy+=round(lengthdir_y(1,dir*90));
 
 	xx = clamp(xx,2,cell_h -2)
 	yy = clamp(yy,2,cell_v -2)
