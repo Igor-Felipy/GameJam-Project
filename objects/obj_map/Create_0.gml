@@ -5,6 +5,7 @@ cell_h = room_width div cell_t;
 cell_v = room_height div cell_t;
 
 grid = ds_grid_create(cell_h,cell_v);
+grid = mp_grid_create(0,0,cell_h,cell_v,cell_t,cell_t);
 ds_grid_clear(grid,0 );
 
 randomise();
@@ -14,6 +15,7 @@ var xx = cell_h div 2;
 var yy = cell_v div 2;
 var chances = 1;
 var passos = 400;
+var inimigo_max = irandom_range(5,20)
 
 for(var i=0; i < passos;i+=1){
 	if(irandom(chances)==chances) {
@@ -42,6 +44,16 @@ for(var xx=0;xx<cell_h;xx++){
 			if(!instance_exists(obj_player)){
 				instance_create_layer(x1,y1,"Instances",obj_player);
 			}
+			
+			if(inimigo_max>0){
+				var chances = 25;
+				if(irandom(chances)==chances and point_distance(x1,y1,obj_player.x,obj_player.y)){
+					instance_create_layer(x1,y1,"Instances",obj_inimigo_a_estrela);
+					inimigo_max-=1;
+				}
+			}
 		}
 	}
 }
+
+mp_grid_add_instances(grid,obj_wall,false)
