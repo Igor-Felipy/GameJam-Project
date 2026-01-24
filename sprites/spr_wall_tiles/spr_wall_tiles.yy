@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_wall_tiles",
   "bboxMode":0,
-  "bbox_bottom":511,
+  "bbox_bottom":1023,
   "bbox_left":0,
-  "bbox_right":639,
+  "bbox_right":1279,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,21 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"9d9bf344-3933-43d2-9930-2a0bcf5ebc58","name":"9d9bf344-3933-43d2-9930-2a0bcf5ebc58","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"fc70850b-8f5a-4fbc-a911-ad713a08fc5b","name":"fc70850b-8f5a-4fbc-a911-ad713a08fc5b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":512,
+  "height":1024,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"90182d9b-0fb2-4552-a3db-691bcfed01d0","blendMode":0,"displayName":"default","isLocked":false,"name":"90182d9b-0fb2-4552-a3db-691bcfed01d0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"b1907ed4-9add-481a-a1c1-3d35cda39951","blendMode":0,"displayName":"default","isLocked":false,"name":"b1907ed4-9add-481a-a1c1-3d35cda39951","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_wall_tiles",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"GameJam Project",
-    "path":"GameJam Project.yyp",
+    "name":"sprites",
+    "path":"folders/sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9d9bf344-3933-43d2-9930-2a0bcf5ebc58","path":"sprites/spr_wall_tiles/spr_wall_tiles.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d526f8e9-7943-4e13-9c21-ee553e778f48","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fc70850b-8f5a-4fbc-a911-ad713a08fc5b","path":"sprites/spr_wall_tiles/spr_wall_tiles.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"258129b1-d110-4bcc-b406-143186ddf183","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":640,
+  "width":1280,
 }

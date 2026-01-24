@@ -5,6 +5,33 @@ var tecla_esquerda = keyboard_check(ord("A"));
 
 var teclas = tecla_direita - tecla_esquerda != 0 || tecla_baixo - tecla_cima != 0;
 
+if(velh !=0) image_xscale = sign(velh)
+
+if (teclas != 0) {
+    sprite_index = spr_Francy_run;
+
+    var _dir_index = round(move_dir / 90) % 4;
+    
+    switch(_dir_index) {
+        case 0:
+            sprite_index = spr_Francy_run;
+            image_xscale = 1;
+            break;
+        case 1:
+            sprite_index = spr_francy_run_up;
+            break;
+        case 2:
+            sprite_index = spr_Francy_run; 
+            image_xscale = -1;
+            break;
+        case 3:
+            sprite_index = spr_francy_run_down;
+            break;
+    }
+} else {
+    sprite_index = spr_francy_idle;
+}
+
 move_dir = point_direction(0, 0, tecla_direita - tecla_esquerda, tecla_baixo - tecla_cima);
 
 velh = lengthdir_x(velc * teclas, move_dir);

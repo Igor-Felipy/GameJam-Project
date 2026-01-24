@@ -1,12 +1,12 @@
 cell_t = 256;
-room_width = cell_t * 40;
+room_width = cell_t * 10;
 room_height = room_width div 2;
 cell_h = room_width div cell_t;
 cell_v = room_height div cell_t;
 
 grid = ds_grid_create(cell_h,cell_v);
-grid = mp_grid_create(0,0,cell_h,cell_v,cell_t,cell_t);
-ds_grid_clear(grid,0 );
+ds_grid_clear(grid,0);
+mp_grid = mp_grid_create(0, 0, cell_h * cell_t, cell_v * cell_t, cell_t, cell_t);
 
 randomise();
 var dir = irandom(3);
@@ -17,10 +17,17 @@ var chances = 1;
 var passos = 400;
 var inimigo_max = irandom_range(5,20)
 
+var chao_index = 17;
+norte = 1;
+oeste = 2;
+leste = 4;
+sul = 8;
+
+var tile_layer = layer_tilemap_get_id("WallTiles")
+
 for(var i=0; i < passos;i+=1){
-	if(irandom(chances)==chances) {
-		dir = irandom(3);
-	}
+dir = irandom(3);
+
 	
 	xx+=round(lengthdir_x(1,dir*90));
 	yy+=round(lengthdir_y(1,dir*90));
@@ -30,7 +37,26 @@ for(var i=0; i < passos;i+=1){
 
 	grid[# xx,yy] = 1;
 }
+/*
+for(var xx=0; xx<cell_h; xx++){
+    for(var yy=0; yy<cell_v; yy++){
+        if(grid[# xx, yy] == 0){ // Se for Parede
+            
+            var norte_t = (yy > 0) && (grid[# xx, yy-1] == 0);
+            var oeste_t = (xx > 0) && (grid[# xx-1, yy] == 0);
+            var leste_t = (xx < cell_h-1) && (grid[# xx+1, yy] == 0);
+            var sul_t   = (yy < cell_v-1) && (grid[# xx, yy+1] == 0);
 
+            var tile_index = (norte_t * norte) + (oeste_t * oeste) + (leste_t * leste) + (sul_t * sul) + 1;
+            
+            tilemap_set(tile_layer, tile_index, xx, yy);
+            
+        } else {
+            tilemap_set(tile_layer, 16, xx, yy);
+        }
+    }
+}
+*/
 for(var xx=0;xx<cell_h;xx++){
 	for(var yy=0;yy<cell_v;yy++){
 		if(grid[# xx,yy]==0){
@@ -46,8 +72,8 @@ for(var xx=0;xx<cell_h;xx++){
 			}
 			
 			if(inimigo_max>0){
-				var chances = 25;
-				if(irandom(chances)==chances and point_distance(x1,y1,obj_player.x,obj_player.y)){
+				var chances_t = 25;
+				if(irandom(chances_t)==chances_t and point_distance(x1, y1, obj_player.x, obj_player.y) > 500){
 					instance_create_layer(x1,y1,"Instances",obj_inimigo_a_estrela);
 					inimigo_max-=1;
 				}
@@ -56,4 +82,4 @@ for(var xx=0;xx<cell_h;xx++){
 	}
 }
 
-mp_grid_add_instances(grid,obj_wall,false)
+mp_grid_add_instances(mp_grid,obj_wall,false)
