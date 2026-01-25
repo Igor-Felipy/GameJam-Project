@@ -1,5 +1,5 @@
 // --- CONFIGURAÇÃO DE PROGRESSÃO ---
-max_esferas_desbloqueadas = 2; 
+max_esferas_desbloqueadas = 5; 
 limite_absoluto = 5;            
 
 // --- VISUAL (SEMI-CÍRCULO) ---

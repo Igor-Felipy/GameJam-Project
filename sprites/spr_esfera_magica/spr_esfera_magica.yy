@@ -2,9 +2,9 @@
   "$GMSprite":"v2",
   "%Name":"spr_esfera_magica",
   "bboxMode":0,
-  "bbox_bottom":11,
+  "bbox_bottom":18,
   "bbox_left":0,
-  "bbox_right":11,
+  "bbox_right":19,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"243718d4-901f-46a6-9149-39a01d0cc87f","name":"243718d4-901f-46a6-9149-39a01d0cc87f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"5bd5cad8-09eb-4a84-9bcd-59b10329a005","name":"5bd5cad8-09eb-4a84-9bcd-59b10329a005","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e3676fb2-628d-470a-86c4-4af1a09d04c7","name":"e3676fb2-628d-470a-86c4-4af1a09d04c7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ef2d7513-9888-46a7-ad32-54f4a192244a","name":"ef2d7513-9888-46a7-ad32-54f4a192244a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a1b86128-c00d-4a92-9a11-ba66f62502bc","name":"a1b86128-c00d-4a92-9a11-ba66f62502bc","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"acdd3c05-f489-4321-8d31-15a6ca49e57f","name":"acdd3c05-f489-4321-8d31-15a6ca49e57f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4d14a27e-ff81-4bed-8350-88111ffb04e4","name":"4d14a27e-ff81-4bed-8350-88111ffb04e4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3fae36c7-297b-4570-9f87-c9366684ade0","name":"3fae36c7-297b-4570-9f87-c9366684ade0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"42ef916a-f513-4969-a181-504afa441e80","name":"42ef916a-f513-4969-a181-504afa441e80","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":12,
+  "height":19,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"4619d7dd-f4f7-421f-bcdf-5c783c1617b0","blendMode":0,"displayName":"default","isLocked":false,"name":"4619d7dd-f4f7-421f-bcdf-5c783c1617b0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"4056a545-2f4f-491b-bb0a-374ce2649265","blendMode":0,"displayName":"default","isLocked":false,"name":"4056a545-2f4f-491b-bb0a-374ce2649265","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_esfera_magica",
   "nineSlice":null,
@@ -49,7 +56,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":8.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -59,7 +66,7 @@
     },
     "name":"spr_esfera_magica",
     "playback":1,
-    "playbackSpeed":30.0,
+    "playbackSpeed":16.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -69,14 +76,35 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"243718d4-901f-46a6-9149-39a01d0cc87f","path":"sprites/spr_esfera_magica/spr_esfera_magica.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"54b27e6b-4e8f-4104-9f1a-ddee2963095c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5bd5cad8-09eb-4a84-9bcd-59b10329a005","path":"sprites/spr_esfera_magica/spr_esfera_magica.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4e32b532-04d8-43d3-b996-5fadc74afb9a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e3676fb2-628d-470a-86c4-4af1a09d04c7","path":"sprites/spr_esfera_magica/spr_esfera_magica.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5ed73636-f533-4301-9bdf-b958b099ae01","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ef2d7513-9888-46a7-ad32-54f4a192244a","path":"sprites/spr_esfera_magica/spr_esfera_magica.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"edd8a8a3-2d3e-41fd-8173-bdbc2aa5218c","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a1b86128-c00d-4a92-9a11-ba66f62502bc","path":"sprites/spr_esfera_magica/spr_esfera_magica.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d00e8c9d-f8a3-418d-9fc0-f189eca519f0","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"acdd3c05-f489-4321-8d31-15a6ca49e57f","path":"sprites/spr_esfera_magica/spr_esfera_magica.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"4c48b74e-5b04-4ce0-9b58-82c7d4bc71a5","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4d14a27e-ff81-4bed-8350-88111ffb04e4","path":"sprites/spr_esfera_magica/spr_esfera_magica.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"296a33ea-97db-43e2-8bfa-138fd9f97e24","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3fae36c7-297b-4570-9f87-c9366684ade0","path":"sprites/spr_esfera_magica/spr_esfera_magica.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fed02aa3-7f07-4a5a-b68a-cb4e3f8b69cc","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"42ef916a-f513-4969-a181-504afa441e80","path":"sprites/spr_esfera_magica/spr_esfera_magica.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"03e227a4-5892-4349-81f3-65213a884568","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":6,
-    "yorigin":6,
+    "xorigin":10,
+    "yorigin":9,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -86,5 +114,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":12,
+  "width":20,
 }

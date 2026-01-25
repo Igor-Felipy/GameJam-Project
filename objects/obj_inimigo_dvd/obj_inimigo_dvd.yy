@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_inimigo_dvd",
-    "path":"sprites/spr_inimigo_dvd/spr_inimigo_dvd.yy",
+    "name":"spr_clavo",
+    "path":"sprites/spr_clavo/spr_clavo.yy",
   },
   "spriteMaskId":null,
   "visible":true,

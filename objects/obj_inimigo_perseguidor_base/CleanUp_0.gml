@@ -1,1 +1,1 @@
-path_delete(caminho);
+if (path_exists(caminho)) path_delete(caminho);
