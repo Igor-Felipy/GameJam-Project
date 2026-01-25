@@ -1,5 +1,5 @@
-cell_t = 256;
-room_width = cell_t * 10;
+cell_t = 128;
+room_width = cell_t * 80;
 room_height = room_width div 2;
 cell_h = room_width div cell_t;
 cell_v = room_height div cell_t;
@@ -37,10 +37,10 @@ dir = irandom(3);
 
 	grid[# xx,yy] = 1;
 }
-/*
+
 for(var xx=0; xx<cell_h; xx++){
     for(var yy=0; yy<cell_v; yy++){
-        if(grid[# xx, yy] == 0){ // Se for Parede
+        if(grid[# xx, yy] == 0){
             
             var norte_t = (yy > 0) && (grid[# xx, yy-1] == 0);
             var oeste_t = (xx > 0) && (grid[# xx-1, yy] == 0);
@@ -52,34 +52,45 @@ for(var xx=0; xx<cell_h; xx++){
             tilemap_set(tile_layer, tile_index, xx, yy);
             
         } else {
-            tilemap_set(tile_layer, 16, xx, yy);
+            tilemap_set(tile_layer, 17, xx, yy);
         }
     }
 }
-*/
-for(var xx=0;xx<cell_h;xx++){
-	for(var yy=0;yy<cell_v;yy++){
-		if(grid[# xx,yy]==0){
-			instance_create_layer(xx*cell_t,yy*cell_t,"Instances",obj_wall);
-		}
-		
-		if(grid[# xx,yy]==1){
-			var x1 = xx * cell_t + cell_t / 2;
-			var y1 = yy * cell_t + cell_t / 2;
 
-			if(!instance_exists(obj_player)){
-				instance_create_layer(x1,y1,"Instances",obj_player);
-			}
-			
-			if(inimigo_max>0){
-				var chances_t = 25;
-				if(irandom(chances_t)==chances_t and point_distance(x1, y1, obj_player.x, obj_player.y) > 500){
-					instance_create_layer(x1,y1,"Instances",obj_inimigo_a_estrela);
-					inimigo_max-=1;
-				}
-			}
-		}
-	}
+var lista_inimigos = [obj_inimigo_dvd, obj_inimigo_corvo_simples,obj_inimigo_ghost];
+
+for(var xx=0; xx<cell_h; xx++){
+    for(var yy=0; yy<cell_v; yy++){
+        
+        if(grid[# xx, yy] == 0){
+            instance_create_layer(xx*cell_t, yy*cell_t, "Instances", obj_wall);
+        }
+        
+        if(grid[# xx, yy] == 1){
+            var x1 = xx * cell_t + cell_t / 2;
+            var y1 = yy * cell_t + cell_t / 2;
+
+            if(!instance_exists(obj_player)){
+                instance_create_layer(x1, y1, "Instances", obj_player);
+            }
+            
+            if(inimigo_max > 0){
+                var chances_t = 25;
+                
+                if(instance_exists(obj_player)){
+                    if(irandom(chances_t) == chances_t && point_distance(x1, y1, obj_player.x, obj_player.y) > 500){
+                        
+                        var indice_aleatorio = irandom(array_length(lista_inimigos) - 1);
+                        var inimigo_escolhido = lista_inimigos[indice_aleatorio];
+                        
+                        instance_create_layer(x1, y1, "Instances", inimigo_escolhido);
+                        
+                        inimigo_max -= 1;
+                    }
+                }
+            }
+        }
+    }
 }
 
 mp_grid_add_instances(mp_grid,obj_wall,false)

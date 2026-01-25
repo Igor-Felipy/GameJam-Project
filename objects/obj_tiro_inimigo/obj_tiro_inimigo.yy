@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall",
-  "eventList":[],
+  "%Name":"obj_tiro_inimigo",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_wall",
+  "name":"obj_tiro_inimigo",
   "overriddenProperties":[],
   "parent":{
     "name":"objetos",
@@ -28,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_parede",
-    "path":"sprites/spr_parede/spr_parede.yy",
+    "name":"spr_tiro_inimigo",
+    "path":"sprites/spr_tiro_inimigo/spr_tiro_inimigo.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

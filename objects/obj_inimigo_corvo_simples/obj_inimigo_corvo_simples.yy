@@ -1,15 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wall",
-  "eventList":[],
+  "%Name":"obj_inimigo_corvo_simples",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_wall",
+  "name":"obj_inimigo_corvo_simples",
   "overriddenProperties":[],
   "parent":{
     "name":"objetos",
     "path":"folders/objetos.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_inimigo_perseguidor_base",
+    "path":"objects/obj_inimigo_perseguidor_base/obj_inimigo_perseguidor_base.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,9 +33,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_parede",
-    "path":"sprites/spr_parede/spr_parede.yy",
+    "name":"spr_enemy_run",
+    "path":"sprites/spr_enemy_run/spr_enemy_run.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
