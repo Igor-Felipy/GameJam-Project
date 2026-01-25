@@ -23,7 +23,6 @@ if (_distancia < _range_tiro) {
                 _tiro.direction = _dir;
                 _tiro.image_angle = _dir;
                 _tiro.speed = 4;
-                show_debug_message("Ghost Atirou!"); 
             }
         }
     }

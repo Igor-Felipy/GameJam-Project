@@ -15,7 +15,7 @@ var xx = cell_h div 2;
 var yy = cell_v div 2;
 var chances = 1;
 var passos = 400;
-var inimigo_max = irandom_range(10,35)
+var inimigo_max = irandom_range(20,35)
 
 var chao_index = 17;
 norte = 1;
@@ -57,7 +57,7 @@ for(var xx=0; xx<cell_h; xx++){
     }
 }
 
-var lista_inimigos = [obj_inimigo_corvo_simples];
+var lista_inimigos = [obj_inimigo_corvo_simples,obj_inimigo_dvd,obj_inimigo_ghost];
 
 for(var xx=0; xx<cell_h; xx++){
     for(var yy=0; yy<cell_v; yy++){
